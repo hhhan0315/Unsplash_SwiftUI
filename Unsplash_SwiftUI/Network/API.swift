@@ -62,4 +62,22 @@ enum API: TargetType {
     var headers: [String: String]? {
         return ["Authorization": "Client-ID \(Secrets.clientID)"]
     }
+    
+    var urlRequest: URLRequest? {
+        guard var urlComponents = URLComponents(string: baseURL + path) else {
+            return nil
+        }
+        
+        urlComponents.queryItems = query?.map { URLQueryItem(name: $0.key, value: $0.value) }
+        
+        guard let url = urlComponents.url else {
+            return nil
+        }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = method.rawValue
+        urlRequest.allHTTPHeaderFields = headers
+        
+        return urlRequest
+    }
 }

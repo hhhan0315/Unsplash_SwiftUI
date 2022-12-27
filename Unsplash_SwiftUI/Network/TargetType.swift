@@ -18,4 +18,5 @@ protocol TargetType {
     var path: String { get }
     var query: [String: String]? { get }
     var headers: [String: String]? { get }
+    var urlRequest: URLRequest? { get }
 }
