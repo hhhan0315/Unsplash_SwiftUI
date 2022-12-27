@@ -16,18 +16,24 @@ struct PhotoListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(photos, id: \.self) { photo in
-                    ImageView(url: photo.urls.regular)
-                        .listRowInsets(EdgeInsets())
-                }
-                
-                ProgressView()
-                    .frame(width: UIScreen.main.bounds.width)
-                    .progressViewStyle(.circular)
-                    .onAppear {
-                        fetchPhotos()
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(photos, id: \.self) { photo in
+                        NavigationLink {
+                            PhotoDetailView(photo: photo)
+                        } label: {
+                            ImageView(url: photo.urls.regular)
+                        }
+                        .buttonStyle(.plain)
                     }
+                    
+                    ProgressView()
+                        .frame(width: UIScreen.main.bounds.width)
+                        .progressViewStyle(.circular)
+                        .onAppear {
+                            fetchPhotos()
+                        }
+                }
             }
             .listStyle(.plain)
             .navigationTitle("Unsplash")
@@ -47,12 +53,11 @@ struct PhotoListView: View {
         guard let urlRequest = API.getListPhotos(photoRequestDTO).urlRequest else {
             return
         }
-                
+        
         cancellable = URLSession.shared.dataTaskPublisher(for: urlRequest)
             .map { $0.data }
             .decode(type: [PhotoResponseDTO].self, decoder: JSONDecoder())
             .replaceError(with: [])
-        //            .eraseToAnyPublisher()
             .sink { photoResponseDTOs in
                 let photos = photoResponseDTOs.map { $0.toDomain() }
                 self.photos += photos
