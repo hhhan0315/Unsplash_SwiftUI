@@ -29,7 +29,7 @@ struct User {
     let name: String
 }
 
-extension Photo: Hashable, Equatable {
+extension Photo: Hashable, Equatable, Identifiable {
     static func == (lhs: Photo, rhs: Photo) -> Bool {
         return lhs.identifier == rhs.identifier
     }

@@ -25,6 +25,8 @@
 		014C20D8295ACCD1007F06B0 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C20D7295ACCD1007F06B0 /* ImageLoader.swift */; };
 		014C20DC295AD5B1007F06B0 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C20DB295AD5B1007F06B0 /* ImageView.swift */; };
 		014C20DE295AE6D3007F06B0 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C20DD295AE6D3007F06B0 /* PhotoDetailView.swift */; };
+		01A8AAEB295B4B5B00E7CC66 /* SearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8AAEA295B4B5B00E7CC66 /* SearchResponseDTO.swift */; };
+		01A8AAED295B4D3700E7CC66 /* StaggeredGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8AAEC295B4D3700E7CC66 /* StaggeredGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		014C20D7295ACCD1007F06B0 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		014C20DB295AD5B1007F06B0 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		014C20DD295AE6D3007F06B0 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		01A8AAEA295B4B5B00E7CC66 /* SearchResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseDTO.swift; sourceTree = "<group>"; };
+		01A8AAEC295B4D3700E7CC66 /* StaggeredGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				012FAF23294C8E1C001624E6 /* ContentView.swift */,
-				014C20DB295AD5B1007F06B0 /* ImageView.swift */,
-				014C20DD295AE6D3007F06B0 /* PhotoDetailView.swift */,
-				014C20CF295A9D45007F06B0 /* PhotoListView.swift */,
-				014C20D5295AB348007F06B0 /* SearchView.swift */,
 				012FAF21294C8E1C001624E6 /* Unsplash_SwiftUIApp.swift */,
 				012FAF25294C8E1E001624E6 /* Assets.xcassets */,
 				012FAF482951F459001624E6 /* Model */,
@@ -91,6 +91,7 @@
 				012FAF27294C8E1E001624E6 /* Preview Content */,
 				012FAF422951EBA9001624E6 /* Request */,
 				012FAF472951F44E001624E6 /* Response */,
+				01A8AAE9295B4AAD00E7CC66 /* View */,
 			);
 			path = Unsplash_SwiftUI;
 			sourceTree = "<group>";
@@ -107,9 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				012FAF332951EAF2001624E6 /* API.swift */,
+				014C20D7295ACCD1007F06B0 /* ImageLoader.swift */,
 				012FAF372951EB25001624E6 /* Secrets.swift */,
 				012FAF352951EB02001624E6 /* TargetType.swift */,
-				014C20D7295ACCD1007F06B0 /* ImageLoader.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -129,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				012FAF432951EEF2001624E6 /* PhotoResponseDTO+Mapping.swift */,
+				01A8AAEA295B4B5B00E7CC66 /* SearchResponseDTO.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -139,6 +141,18 @@
 				012FAF452951EF0F001624E6 /* Photo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		01A8AAE9295B4AAD00E7CC66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				014C20DB295AD5B1007F06B0 /* ImageView.swift */,
+				014C20DD295AE6D3007F06B0 /* PhotoDetailView.swift */,
+				014C20CF295A9D45007F06B0 /* PhotoListView.swift */,
+				014C20D5295AB348007F06B0 /* SearchView.swift */,
+				01A8AAEC295B4D3700E7CC66 /* StaggeredGrid.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,8 @@
 				012FAF342951EAF2001624E6 /* API.swift in Sources */,
 				014C20DE295AE6D3007F06B0 /* PhotoDetailView.swift in Sources */,
 				012FAF3A2951EB62001624E6 /* PhotoRequestDTO.swift in Sources */,
+				01A8AAED295B4D3700E7CC66 /* StaggeredGrid.swift in Sources */,
+				01A8AAEB295B4B5B00E7CC66 /* SearchResponseDTO.swift in Sources */,
 				012FAF3E2951EB83001624E6 /* TopicPhotoRequestDTO.swift in Sources */,
 				014C20D8295ACCD1007F06B0 /* ImageLoader.swift in Sources */,
 				012FAF402951EB91001624E6 /* TopicRequestDTO.swift in Sources */,

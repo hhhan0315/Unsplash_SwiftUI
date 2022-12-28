@@ -17,7 +17,7 @@ struct PhotoListView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack(spacing: 0) {
+                LazyVStack(spacing: 10) {
                     ForEach(photos, id: \.self) { photo in
                         NavigationLink {
                             PhotoDetailView(photo: photo)
@@ -38,6 +38,7 @@ struct PhotoListView: View {
             .listStyle(.plain)
             .navigationTitle("Unsplash")
             .navigationBarTitleDisplayMode(.inline)
+            .padding(.horizontal)
         }
     }
     
