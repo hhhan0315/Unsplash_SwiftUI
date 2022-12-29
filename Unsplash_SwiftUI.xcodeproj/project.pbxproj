@@ -26,7 +26,6 @@
 		014C20DC295AD5B1007F06B0 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C20DB295AD5B1007F06B0 /* ImageView.swift */; };
 		014C20DE295AE6D3007F06B0 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C20DD295AE6D3007F06B0 /* PhotoDetailView.swift */; };
 		01A8AAEB295B4B5B00E7CC66 /* SearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8AAEA295B4B5B00E7CC66 /* SearchResponseDTO.swift */; };
-		01A8AAED295B4D3700E7CC66 /* StaggeredGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A8AAEC295B4D3700E7CC66 /* StaggeredGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +49,6 @@
 		014C20DB295AD5B1007F06B0 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		014C20DD295AE6D3007F06B0 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		01A8AAEA295B4B5B00E7CC66 /* SearchResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseDTO.swift; sourceTree = "<group>"; };
-		01A8AAEC295B4D3700E7CC66 /* StaggeredGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +148,6 @@
 				014C20DD295AE6D3007F06B0 /* PhotoDetailView.swift */,
 				014C20CF295A9D45007F06B0 /* PhotoListView.swift */,
 				014C20D5295AB348007F06B0 /* SearchView.swift */,
-				01A8AAEC295B4D3700E7CC66 /* StaggeredGrid.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,7 +232,6 @@
 				012FAF342951EAF2001624E6 /* API.swift in Sources */,
 				014C20DE295AE6D3007F06B0 /* PhotoDetailView.swift in Sources */,
 				012FAF3A2951EB62001624E6 /* PhotoRequestDTO.swift in Sources */,
-				01A8AAED295B4D3700E7CC66 /* StaggeredGrid.swift in Sources */,
 				01A8AAEB295B4B5B00E7CC66 /* SearchResponseDTO.swift in Sources */,
 				012FAF3E2951EB83001624E6 /* TopicPhotoRequestDTO.swift in Sources */,
 				014C20D8295ACCD1007F06B0 /* ImageLoader.swift in Sources */,
